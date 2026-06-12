@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Medinovatech 3D Simulator — Allergy-Immunology</title>
+<link rel="stylesheet" href="./styles.css">
+<script type="importmap">{ "imports": { "three": "./vendor/three.module.js" } }</script>
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <div id="bg"></div>
+    <img id="portrait" alt="">
+
+    <div id="topbar">
+      <span class="badge" id="loc">—</span>
+      <span class="badge" id="epInfo"></span>
+      <span class="spacer"></span>
+      <span class="badge" id="scoreInfo"></span>
+      <button id="langBtn">🌐 EN</button>
+    </div>
+
+    <div id="verdict"></div>
+
+    <div id="box">
+      <span id="namep"></span>
+      <div id="panel">
+        <p id="text"></p>
+        <div id="options"></div>
+        <div id="prompt"></div>
+        <div id="nextWrap"></div>
+      </div>
+    </div>
+
+    <!-- flashcard / library modal -->
+    <div id="modal">
+      <div id="card">
+        <span id="cardTag"></span>
+        <h2 id="cardTitle"></h2>
+        <p id="cardBody"></p>
+        <div id="cardBtns"></div>
+      </div>
+    </div>
+
+    <!-- title screen -->
+    <div id="title" class="screen">
+      <h1 class="logo" id="titleLogo">MEDINOVATECH ACADEMY</h1>
+      <p class="tagline" id="titleTag"></p>
+      <button class="btn" id="startBtn"></button>
+      <div style="height:10px"></div>
+      <button class="btn calm" id="anaBtn"></button>
+      <div style="height:14px"></div>
+      <button id="titleLang" class="badge" style="cursor:pointer"></button>
+    </div>
+
+    <!-- 3D anatomy room -->
+    <div id="anatomy">
+      <div id="anaCanvas"></div>
+      <div id="anaLoading">Memuat model 3D… · Loading 3D model…</div>
+      <div class="ana-bar">
+        <button id="anaExit" class="badge"></button>
+        <span class="ana-title" id="anaTitle"></span>
+        <span class="spacer"></span>
+        <button id="anaToggle" class="btn rose"></button>
+        <button id="anaLang" class="badge">🌐</button>
+      </div>
+      <div class="ana-hint" id="anaHint"></div>
+      <div id="anaInfo">
+        <span id="anaInfoTag"></span>
+        <h3 id="anaInfoTitle"></h3>
+        <p id="anaInfoBody"></p>
+        <button class="btn" id="anaInfoClose"></button>
+      </div>
+    </div>
+
+    <!-- end screen -->
+    <div id="end" class="screen">
+      <h1 class="logo big" id="endTitle"></h1>
+      <p class="tagline" id="endBody"></p>
+      <p class="statline" id="endStats"></p>
+      <div class="affwrap" id="affWrap"></div>
+      <button class="btn" id="endRestart"></button>
+    </div>
+  </div>
+</div>
+<script type="module" src="./game.js"></script>
+</body>
+</html>
