@@ -108,6 +108,9 @@ html,body{margin:0;height:100%;overflow:hidden;font-family:"Segoe UI",system-ui,
 .affchip{background:var(--panel);border:1.5px solid var(--panel-edge);border-radius:14px;
   padding:8px 12px;font-size:13px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:6px}
 .affchip b{color:var(--teal)}
+#backHub{color:var(--parchment);font-size:13px;font-weight:700;text-decoration:none;opacity:.85;
+  text-shadow:0 1px 6px rgba(0,0,0,.6)}
+#backHub:hover{opacity:1;text-decoration:underline}
 
 /* ---------- 3D anatomy room ---------- */
 #anatomy{position:absolute;inset:0;z-index:11;display:none;background:#1c130a}
